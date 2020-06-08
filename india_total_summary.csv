@@ -1,0 +1,2 @@
+active_cases,active_rate,confirmed_cases,death_cases,death_rate,delta_change_active_cases,delta_change_death_cases,delta_change_recovered_cases,last_total_active_cases,last_total_death_cases,last_total_recovered_cases,last_updated,migrated_cases,passengers_screened,recovered_cases,recovered_rate
+125381,48.86,256610,7135,2.78,4975,206,4802,120406,6929,119292,"08 June 2020, 08:00 IST (GMT+5:30)",1,1524266,124094,48.36

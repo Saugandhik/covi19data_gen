@@ -1,0 +1,22 @@
+create database covid19_study;
+GRANT ALL ON covid19_study.* TO sau@%;
+CREATE TABLE covid19_study.state_details (active int(12), active_rate double(6,2), confirmed int(12), death_rate double(6,2), deaths int(12),recovered int(12), recovered_rate double(6,2), state varchar(200), insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(state));
+
+CREATE TABLE covid19_study.global_updates (country varchar(300),new_case int(12),new_death int(12),global_updates text(500),insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(insrt_dt,country));
+
+CREATE TABLE covid19_study.global_data (confirmed_cases int(12),active_cases int(12),recovered_cases int(12),death_cases int(12),active_rate double(6,2),recovered_rate double(6,2),death_rate double(6,2),new_cases int(12),new_deaths int(12),serious_cases int(12),insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(insrt_dt));
+
+
+CREATE TABLE covid19_study.state_timeline (date date,AndamanandNicobarIslands int(12),AndhraPradesh int(12),ArunachalPradesh int(12),Assam int(12),Bihar int(12),Chandigarh int(12),Chhattisgarh int(12),DadarNagarHaveli int(12),Delhi int(12),Goa int(12),Gujarat int(12),Haryana int(12),HimachalPradesh int(12),JammuandKashmir int(12),Jharkhand int(12),Karnataka int(12),Kerala int(12),Ladakh int(12),Lakshadweep int(12),MadhyaPradesh int(12),Maharashtra int(12),Manipur int(12),Meghalaya int(12),Mizoram int(12),Nagaland int(12),Odisha int(12),Puducherry int(12),Punjab int(12),Rajasthan int(12),Sikkim int(12),TamilNadu int(12),Telengana int(12),Tripura int(12),UttarPradesh int(12),Uttarakhand int(12),WestBengal int(12),PRIMARY KEY(date));
+
+
+CREATE TABLE covid19_study.india_summary (active_cases int(12), active_rate double(6,2), confirmed_cases int(12), death_cases int(12), death_rate double(6,2), delta_change_active_cases int(12), delta_change_death_cases int(12), delta_change_recovered_cases int(12), last_total_active_cases int(12), last_total_death_cases int(12), last_total_recovered_cases int(12), last_updated varchar(50), migrated_cases int(12), passengers_screened int(12), recovered_cases int(12), recovered_rate double(6,2),insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(last_updated));
+
+select * from covid19_study.state_details;
+
+
+active int(12), active_rate double(6,2), confirmed int(12), death_rate double(6,2), deaths int(12),recovered int(12), recovered_rate double(6,2), state varchar(200), insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(state)
+
+global_updates varchar2,insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(global_updates,insrt_dt)
+
+CREATE TABLE covid19_study.global_data (confirmed_cases int(12),active_cases int(12),recovered_cases int(12),death_cases int(12),active_rate double(6,2),recovered_rate double(6,2),death_rate double(6,2),new_cases int(12),new_deaths int(12),serious_cases int(12),insrt_dt DATETIME DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(insrt_dt));
